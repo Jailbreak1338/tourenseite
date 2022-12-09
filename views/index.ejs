@@ -5,34 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   
-  <table>
-  <tr>
-    <th><input type="text" id="Apotheke" name="Apotheke" required></th>
-    <th>       <input type="text" id="Fahrer" name="Fahrer" required></th>
-    <th>Kundenankunft</th>
-  </tr>
-  <tr>
-    <td>Miljöh</td>
-    <td>Kiez</td>
-    <td>Bierdampf</td>
-   </tr>
-   <tr>
-     <td>Buletten</td>
-     <td>Frikadellen</td>
-     <td>Fleischpflanzerl</td>
-   </tr>
-</table>
+  
 
   <body>
     <div class="content-container">
       <form id="content-form" method="POST" action="/tour">
-        <input type="text" id="Tourenname" name="Tourenname" required>
-        <input type="text" id="Fahrer der Tour" name="Frachführer" required>
-        <input type="text" id="destination" name="Adresse" required>
-        <input type="text" id="destination" name="Adresse" required>
-        <input type="text" id="destination" name="Adresse" required>
-        <input type="text" id="destination" name="Adresse" required>
-        <input type="checkbox"> id="Gelesen"name="Gelesen" required>
+<h1>Tourenübersicht </h1>
+
+<label for="Tour">Tour:</label>
+<input type="text" id="Tour" name="Tour" required>
+
+<label for="xx">Frachtführer:</label>
+<input type="Frachführer" id="Frachführer" name="Frachführer" required>
+
+<br>
+ <br> 
+
+<table>
+  <tr>
+    <th>Apotheke</th>
+    <th>Ort</th>
+    <th>Ankunft</th>
+    <th>BtM</th>
+    <th>Beipack</th>
+  </tr>
+  <tr>
+    <td> <textarea id="Apotheke" name="Apotheke" rows="3" cols="17">
+</textarea>></td>
+        <td> <textarea id="Ort" name="Ort" rows="3" cols="17">
+</textarea>></td>
+    <td> <input type="text" id="Ankunft" name="Ankunft" required></td>
+    <td> <input type="text" id="BtM" name="BtM" required></td>
+    <td> <input type="text" id="Beipack" name="Beipack" required></td>
+   </tr>
+   <tr>
+   </tr>
+</table>
+
+ <br> 
+
+<table>
+  <tr>
+    <th>Apotheke</th>
+    <th>Ort</th>
+    <th>Ankunft</th>
+    <th>BtM</th>
+    <th>Beipack</th>
+  </tr>
+  <tr>
+        <td> <textarea id="Apotheke2" name="Apotheke2" rows="3" cols="17">
+</textarea>></td>
+        <td> <textarea id="Ort2" name="Ort2" rows="3" cols="17">
+</textarea>></td>
+    <td> <input type="text" id="Ankunft" name="Ankunft" required></td>
+    <td> <input type="text" id="BtM" name="BtM" required></td>
+    <td> <input type="text" id="Beipack" name="Beipack" required></td>
+    <table>
+          
+           <br> 
+          
+    <th>Apotheke</th>
+    <th>Ort</th>
+    <th>Ankunft</th>
+    <th>BtM</th>
+    <th>Beipack</th>
+  </tr>
+  <tr>
+      
+        <td> <textarea id="Apotheke3" name="Apotheke3" rows="3" cols="17">
+</textarea>></td>
+        <td> <textarea id="Ort3" name="Ort3" rows="3" cols="17">
+</textarea>></td>
+    <td> <input type="text" id="Ankunft" name="Ankunft" required></td>
+    <td> <input type="text" id="BtM" name="BtM" required></td>
+    <td> <input type="text" id="Beipack" name="Beipack" required></td>
+   </tr>
+   <table>
                 
         <input type="submit" value="Create QR Code">
       </form>
