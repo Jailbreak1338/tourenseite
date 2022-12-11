@@ -1,8 +1,8 @@
 <html lang="de">
     <head>
         <meta charset="utf-8">
-        <title>Tourenübersicht</title>
-        <meta name="https://tourenseite.onrender.com" content="width=device-width, initial-scale=1">
+        <title>Liefertouren</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
@@ -10,10 +10,16 @@
             <img src="<%=src.qrcode%>" alt="qr code image">
         </div>
         <ul>
-            <% for (const [key, value] of Object.entries(src.data)) {%>
-                <li><%=key%>%>: <%=value%></li> 
-                <hr>
-            <% } %>
+            <%
+            let i = -2;
+            for (const [key, value] of Object.entries(src.data)) {
+                i++;
+            %>
+                <li><%=key%>%>: <%=value%></li>
+                <% if (i % 5 == 0) {%>
+                    <hr>
+                <%}%>
+            <%}%>
         </ul>
     </body>
 </html>
