@@ -46,7 +46,7 @@ app.post("/tour", (req, res) => {
         }
 
         //generate a qr code for each dataset which contains the uuid
-        let dest = process.env.NODE_ENV === 'production' ? process.env.HOST : process.env.LOCALHOST_DEST;
+        let dest = process.env.NODE_ENV === 'production' ? process.env.HOST_DEST : process.env.LOCALHOST_DEST;
         qrcode.toDataURL(`${dest}/${id}`, (err, url) => {
             if (err) res.status(400).send({ error: "Error while trying to create Qr Code" });
 
